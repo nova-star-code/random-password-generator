@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="password-container">
+        <h1>Generate a <br><span>random password</span></h1>
+        <p>The password is belongs to you</p>
+        <div id="input-field">
+            <ul>
+                <li><label>length:<strong id="input-value">8</strong></label>
+                <input type="range" min="8" max="22" value="8" id="input-range" step="1"></li>
+                <li>Lowercase (a-z) : <input type="checkbox" id="lowercase-box"></li>
+                <li>Uppercase (A-Z) : <input type="checkbox" id="uppercase-box"></li>
+                <li>Number (1-9) : <input type="checkbox"id="number-box"></li>
+                <li>Special (!-?) : <input type="checkbox" id="special-box"></li>
+            </ul>  
+        </div>   
+        <button class="btn btn-color" id="password-btn">Generate password</button>
+        <hr>
+        <button class="btn btn-color" id="firstPassword"></button>
+        <button class="btn btn-color" id="secondPassword"></button>
+        <script src="index.js"></script>
+    </div>
+    <div class="info">
+        <h1>Intro</h1>
+        <P>Hello, everybody! I am NOVA LEE👋<br>
+        Welcome to my Random Password Generator.🔐<br>
+        You can customize your password by checking or unchecking the boxes for the options you want <br>
+        ⚠️ Note: If no boxes are selected, no password will be generated — so make sure to choose at least one! </P>
+        <h1>Feature</h1>
+        <P>①customize choice for your password</P>
+        <p>②click the password button to copy to your clickboard</p>
+        <P>③dynamic hover effect</P>
+        <p id="footer">All rights reserved by NOVA LEE</p>
+    </div>
+</body>
+</html>
